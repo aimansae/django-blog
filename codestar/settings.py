@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['codeastar-as.herokuapp.com', 'localhost']
-
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Application definition
 
