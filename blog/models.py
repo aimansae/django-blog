@@ -23,9 +23,9 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
-        User, related_name='blogpost_like', blank=True)
+        User, related_name='blog_likes', blank=True)
 
-# to order the fields base on created on date
+# to order the fields base on created on date - ascending order
 
     class Meta:
         ordering = ["-created_on"]
